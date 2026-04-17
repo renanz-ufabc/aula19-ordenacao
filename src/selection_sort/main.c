@@ -1,16 +1,19 @@
 #include <stdio.h>
-
 #include "selection_sort.h"
 
-void printArray(Element* arr, int n) {
-    for (int i = 0; i < n; i++) {
-        element_print(arr[i]);
-        printf(" ");
+
+void printArray(Element * arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        element_print_sp(arr[i]);
     }
     printf("\n");
 }
 
-int main() {
+
+int main()
+{
     Element a[] = {10};
     int aSize = 1;
 

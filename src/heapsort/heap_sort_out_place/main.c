@@ -1,21 +1,24 @@
 #include <stdio.h>
-
 #include "heap_sort.h"
 
-void printArray(Element* arr, int n) {
-    for (int i = 0; i < n; i++) {
-        element_print(arr[i]);
-        printf(" ");
+
+void printArray(Element * arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        element_print_sp(arr[i]);
     }
     printf("\n");
 }
 
-int main() {
+
+int main()
+{
     Element a[] = {10};
     int aSize = 1;
 
     printArray(a, aSize);
-    heapsort(a, aSize);
+    heapSort(a, aSize);
     printArray(a, aSize);
 
     printf("\n");
@@ -24,7 +27,7 @@ int main() {
     int bSize = 2;
 
     printArray(b, bSize);
-    heapsort(b, bSize);
+    heapSort(b, bSize);
     printArray(b, bSize);
 
     printf("\n");
@@ -33,7 +36,7 @@ int main() {
     int cSize = 5;    
 
     printArray(c, cSize);
-    heapsort(c, cSize);
+    heapSort(c, cSize);
     printArray(c, cSize);
 
     return 0;
